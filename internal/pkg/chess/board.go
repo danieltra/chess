@@ -45,25 +45,33 @@ func (b *Board) Run() {
 	for turn := 0; turn < 15; turn++ {
 		fmt.Printf("\n----Running turn %d----\n", turn)
 
+		fmt.Println("----Performing white's move----")
 		b.WhitePlayer.Move()
 
+		fmt.Println("----Checking for a winning move for black----")
 		// check if black can capture white after white's move, as it's black's turn to make a move
 		if b.BlackPlayer.CheckForWin(b.WhitePlayer) {
-			fmt.Printf("%s", b)
 			fmt.Println("The black rook is able to capture the white bishop")
 			fmt.Println("Black is the winner!")
+			fmt.Printf("%s", b)
 			return
 		}
 
+		fmt.Println("No winning move found")
+
+		fmt.Println("----Performing blacks's move----")
 		b.BlackPlayer.Move()
 
+		fmt.Println("----Checking for a winning move for white----")
 		// check if white can capture black after black's move, as it's white's turn to make a move
 		if b.WhitePlayer.CheckForWin(b.BlackPlayer) {
-			fmt.Printf("%s", b)
 			fmt.Println("The white bishop is able to capture the black rook")
 			fmt.Println("White is the winner!")
+			fmt.Printf("%s", b)
 			return
 		}
+
+		fmt.Println("No winning move found")
 
 		fmt.Printf("%s", b)
 
