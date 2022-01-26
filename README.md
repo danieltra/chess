@@ -12,3 +12,4 @@ The app can be run via `go run cmd/main.go`.
 - I assumed there will only ever be two players
 - I assumed there would only ever be 1 chess piece per player
 - I treated a coin toss like a 2 sided die (a value of 0 or 1)
+- I assumed a game would only ever be 15 turns, as that was specified in the challenge
