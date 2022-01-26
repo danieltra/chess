@@ -1,5 +1,5 @@
 # chess
-This repo simulates a simplified game of chess, with only two pieces. When the program is run the simulation is run until the game is complete, up to 15 turns. White wins if it has a move to capture black, black wins if has a move to capture white.
+This repo contains a simulation of a simplified game of chess, with only two pieces. When the program is run the simulation is run until the game is complete, up to 15 turns. White wins if it has a move to capture black, black wins if has a move to capture white.
 
 ## Running the Application
 
