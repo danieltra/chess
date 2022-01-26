@@ -1,0 +1,4 @@
+# github.com/adam-lavrik/go-imath v0.0.0-20210910152346-265a42a96f0b
+## explicit
+github.com/adam-lavrik/go-imath/ix
+github.com/adam-lavrik/go-imath/ux
