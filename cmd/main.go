@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	board := chess.InitBoard()
+	board := chess.NewBoard()
 
 	board.Run()
 }

@@ -13,8 +13,8 @@ type Board struct {
 	BlackPlayer *Player
 }
 
-// InitBoard initializes a chess board. In this case, a simplified game of chess with just two pieces.
-func InitBoard() Board {
+// NewBoard initializes a chess board. In this case, a simplified game of chess with just two pieces.
+func NewBoard() Board {
 	return Board{
 		WhitePlayer: &Player{
 			Color: White,
